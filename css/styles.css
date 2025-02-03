@@ -122,6 +122,11 @@ h1 {
   object-fit: cover;
 }
 
+/* Container for sidebar and main content */
+.container{
+  display: flex;
+}
+
 /* Sidebar with options */
 aside {
   margin-top: 7%;
@@ -130,7 +135,7 @@ aside {
   background-color: #022868;
   position: relative;
   height: 100%;
-  width: 250px;
+  width: 20%;
 }
 
 aside .menu ul,
@@ -144,8 +149,7 @@ aside .admin-section ul li {
   display: flex;
   align-items: center;
   padding: 10px 20px;
-  position: relative; /* Añadir esta línea */
-}
+  position: relative; /* Añadir esta línea */ }
 
 aside .menu ul li i,
 aside .admin-section ul li i {
@@ -165,4 +169,15 @@ aside .admin-section ul li a {
 aside .admin-section h2 {
   font-weight: 400;
   padding: 15px 20px;
+}
+
+/* Main content */
+
+main{
+  background-color: #fff;
+  border-radius: 20px;
+  width: 85%;
+  margin-top: 2%;
+  margin-left: auto;
+  margin-right: 1%;
 }
