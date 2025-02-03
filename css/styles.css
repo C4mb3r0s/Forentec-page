@@ -1,6 +1,7 @@
 * {
   padding: 0;
   margin: 0;
+  font-family: sans-serif;
   box-sizing: border-box;
 }
 
@@ -14,38 +15,37 @@ nav {
   justify-content: space-between;
   color: #fff;
   height: 60px;
-  padding-top: 20px;
 }
 
 .title {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  margin-top: -15px;
 }
 
 h1 {
-  font-size: 7rem;
-  margin-left: 15%;
+  font-size: 5rem;
+  margin-left: 20%;
   font-weight: 800;
 }
 
 .eslogan {
-  font-size: 1rem;
+  font-size: .81rem;
   width: 100%;
-  margin-top: -10%;
-  margin-left: 15%;
+  margin-top: -8%;
+  margin-left: 20%;
 }
 
 .search-container {
   display: flex;
   position: relative;
   align-items: center;
-  margin-left: 5%;
+  margin-left: 9%;
+  margin-top: 30px;
 }
 
 .search {
-  width: 400px;
+  width: 450px;
   height: 50px;
   border-radius: 49px;
   padding: 0 45px 0 20px;
@@ -71,6 +71,7 @@ h1 {
   display: flex;
   position: relative;
   align-items: center;
+  margin-top: 35px;
 }
 
 .notifications button {
@@ -96,11 +97,12 @@ h1 {
   padding: 10px;
   border: none;
   max-width: 300px;
-  margin-top: 10px;
-  padding-right: 3%;
+  margin-top: 1%;
+  padding-right: 1%;
 }
 
 .info .details {
+  margin-top: 3%;
   display: block;
   margin-right: 10px;
 }
@@ -110,14 +112,22 @@ h1 {
   margin-bottom: 4px;
 }
 
+.info .details .name{
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+.info .details .position{
+  color: rgba( rgba(187, 171, 171, 0.41));
+}
+
 .info a {
   color: orange;
   text-decoration: none;
 }
 
 .info img {
-  height: 50px;
-  width: 50px;
+  height: 60px;
+  width: 60px;
   border-radius: 50%;
   object-fit: cover;
 }
@@ -172,12 +182,12 @@ aside .admin-section h2 {
 }
 
 /* Main content */
-
 main{
   background-color: #fff;
-  border-radius: 20px;
-  width: 85%;
+  border-radius: 40px;
+  width: 90%;
   margin-top: 2%;
   margin-left: auto;
   margin-right: 1%;
+  padding: 20px;
 }
