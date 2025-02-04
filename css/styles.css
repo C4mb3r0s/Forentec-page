@@ -82,6 +82,7 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 }
 
 .notifications button i {
@@ -237,4 +238,6 @@ iframe {
   width: 100%;
   height: 100%;
   border: none;
+
+  pointer-events: auto;
 }
