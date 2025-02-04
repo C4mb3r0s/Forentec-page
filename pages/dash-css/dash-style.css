@@ -68,23 +68,24 @@ font-weight: 400;
     border: 1px solid #7f8e9f7d;
     padding: 15px;
     text-align: center;
+    width: 15%;
 }
 
 .indicadores .indicador.one i {
-color:red;
+color:rgb(217, 143, 143);
 font-size: 30px;
 }
 
 .indicadores .indicador.two i {
-color:red;
+color:rgb(226, 188, 18);
 font-size: 30px;
 }
 .indicadores .indicador.trhee i {
-color:red;
+color:rgb(30, 30, 160);
 font-size: 30px;
 }
 .indicadores .indicador.four i {
-color:red;
+color:green;
 font-size: 30px;
 }
 .indicadores .indicador.five i {
