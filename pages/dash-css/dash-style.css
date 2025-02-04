@@ -1,0 +1,93 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+.sup-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    font-size: 1.2em;
+
+
+    a {
+        text-decoration: none;
+        color: #007bff;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+
+    strong {
+        color: blue;
+        font-weight: bold;
+    }
+}
+
+.titles-indicadores{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.titles-indicadores button{
+    background-color: #007bff;
+    color: #fff;
+    font-size: 1.5rem;
+    padding: 10px;
+    border-radius: 49px;
+    border: none;
+    width: 250px;
+}
+.titles-indicadores button i {
+font-weight: 400;
+
+}
+
+.indicadores{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #fff;
+}
+
+.indicadores .indicador{
+    border: 1px solid #7f8e9f7d;
+    padding: 15px;
+    text-align: center;
+}
+
+.indicadores .indicador.one i {
+color:red;
+font-size: 30px;
+}
+
+.indicadores .indicador.two i {
+color:red;
+font-size: 30px;
+}
+.indicadores .indicador.trhee i {
+color:red;
+font-size: 30px;
+}
+.indicadores .indicador.four i {
+color:red;
+font-size: 30px;
+}
+.indicadores .indicador.five i {
+color:red;
+font-size: 30px;
+}
