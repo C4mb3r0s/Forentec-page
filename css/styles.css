@@ -112,12 +112,13 @@ h1 {
   margin-bottom: 4px;
 }
 
-.info .details .name{
+.info .details .name {
   font-size: 1.2rem;
   font-weight: 600;
 }
-.info .details .position{
-  color: rgba( rgba(187, 171, 171, 0.41));
+
+.info .details .position {
+  color: rgba(rgba(187, 171, 171, 0.41));
 }
 
 .info a {
@@ -133,14 +134,14 @@ h1 {
 }
 
 /* Container for sidebar and main content */
-.container{
+.container {
   display: flex;
 }
 
 /* Sidebar with options */
 aside {
-  margin-top: 7%;
-  margin-left: 4%;
+  margin-top: 6%;
+  margin-left: 2%;
   color: #fff;
   background-color: #022868;
   position: relative;
@@ -159,21 +160,60 @@ aside .admin-section ul li {
   display: flex;
   align-items: center;
   padding: 10px 20px;
-  position: relative; /* Añadir esta línea */ }
+  position: relative;
+}
+
+aside .menu ul li:hover,
+aside .admin-section ul li:hover {
+  background-color: #fff;
+}
+
+aside .menu ul li:hover i,
+aside .admin-section ul li:hover i {
+  background-color: #fff;
+  color: #022868;
+}
+
+aside .menu ul li i:hover,
+aside .admin-section ul li i:hover {
+  color: #022868;
+}
+aside .menu ul li:hover a,
+aside .admin-section ul li:hover a {
+color: #022868;
+}
+
 
 aside .menu ul li i,
 aside .admin-section ul li i {
   margin-right: 10px;
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   padding-right: 20px;
-  position: relative; /* Cambiar de absolute a relative */
+  position: relative;
 }
 
 aside .menu ul li a,
 aside .admin-section ul li a {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   text-decoration: none;
   color: #fff;
+}
+
+aside .menu ul li.active a,
+aside .admin-section ul li.active a {
+  color: #022868;
+}
+
+aside .menu ul li.active,
+aside .admin-section ul li.active {
+  background-color: #fff;
+  border-radius: 20px 20px 20px 20px;
+  color: #022868;
+}
+
+aside .menu ul li.active i,
+aside .admin-section ul li.active i {
+  color: #022868;
 }
 
 aside .admin-section h2 {
@@ -182,7 +222,7 @@ aside .admin-section h2 {
 }
 
 /* Main content */
-main{
+main {
   background-color: #fff;
   border-radius: 40px;
   width: 90%;

@@ -8,6 +8,8 @@
   <!-- icons of bootstrap -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
+  <!-- Script for the movement and change of frame-->
+  <script src="app.js"></script>
   <!-- Styles -->
   <link rel="stylesheet" href="./css/styles.css">
   <title>Forentec</title>
@@ -44,36 +46,30 @@
   <aside class="sidebar">
     <div class="menu">
       <ul>
-        <li><i class="bi bi-house-door-fill"></i><a href="">Dashboard</a></li>
-        <li><i class="bi bi-file-binary-fill"></i><a href="">Folios</a></li>
-        <li><i class="bi bi-diagram-3-fill"></i><a href="">Áreas</a></li>
-        <li><i class="bi bi-file-earmark-excel"></i><a href="">Denuncias</a></li>
-        <li><i class="bi bi-clipboard-check-fill"></i><a href="">Reportes</a></li>
-        <li><i class="bi bi-clipboard-data"></i><a href="">Estadisticas</a></li>
-        <li><i class="bi bi-truck"></i><a href="">Vehículos</a></li>
-        <li><i class="bi bi-geo-alt-fill"></i><a href="">Mapa</a></li>
+        <li class="active"><i class="bi bi-house-door-fill"></i><a href="" onclick="showContent('dashboard'); return false">Dashboard</a></li>
+        <li><i class="bi bi-file-binary-fill"></i><a  href=""onclick="showContent('folios'); return false">Folios</a></li>
+        <li><i class="bi bi-diagram-3-fill"></i><a  href=""onclick="showContent('areas'); return false">Áreas</a></li>
+        <li><i class="bi bi-file-earmark-excel"></i><a href="" onclick="showContent('denuncias'); return false">Denuncias</a></li>
+        <li><i class="bi bi-clipboard-check-fill"></i><a href="" onclick="showContent('reportes'); return false">Reportes</a></li>
+        <li><i class="bi bi-clipboard-data"></i><a href="" onclick="showContent('estadisticas'); return false">Estadisticas</a></li>
+        <li><i class="bi bi-truck"></i><a href="" onclick="showContent('vehiculos'); return false">Vehículos</a></li>
+        <li><i class="bi bi-geo-alt-fill"></i><a href="" onclick="showContent('mapas'); return false">Mapa</a></li>
       </ul>
     </div>
     <div class="admin-section">
       <h2>Administación</h2>
       <ul>
-        <li><i class="bi bi-file-earmark-ruled-fill"></i><a href="">Catálogos</a></li>
-        <li><i class="bi bi-gear-fill"></i><a href="">Ajustes</a></li>
-        <li><i class="bi bi-person-fill-gear"></i><a href="">Usuarios</a></li>
-        <li><i class="bi bi-box-arrow-in-right"></i><a href="">Cerrar sesión</a></li>
+        <li><i class="bi bi-file-earmark-ruled-fill"></i><a href="" onclick="showContent('catalogos'); return false">Catálogos</a></li>
+        <li><i class="bi bi-gear-fill"></i><a href="" onclick="showContent('ajustes'); return false">Ajustes</a></li>
+        <li><i class="bi bi-person-fill-gear"></i><a href="" onclick="showContent('usuarios'); return false">Usuarios</a></li>
+        <li><i class="bi bi-box-arrow-in-right"></i><a href="" onclick="showContent('cerrar-sesion'); return false">Cerrar sesión</a></li>
       </ul>
     </div>
   </aside>
 
   <main>
-    <div class="header">
-
-    </div>
-
-    <h3>Indicadores de folios hoy</h3>
-
-
-  </main>
+    <iframe id="main-frame" src="./pages/dashboard.html" frameborder="0"></iframe>
+     </main>
   </div>
 
 </body>
