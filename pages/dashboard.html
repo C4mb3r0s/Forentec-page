@@ -1,22 +1,35 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- icons-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- Styles-->
     <link rel="stylesheet" href="./dash-css/dash-style.css">
+
+    <!-- Date conection-->
+    <script src="./js-extends/date.js"></script>
+
+    <!-- Chart.js for the graphics-->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="./js-extends/graphics.js"></script>
+
     <title></title>
 </head>
+
 <body>
     <div class="sup-header">
         <label for="">MejoraClick Administrador > <a href="#">Dashboard</a></label>
 
         <span id="date"></span>
 
-        <label for="">Área: <strong>Servicios Públicos</strong></label>
+        <label for="">Área<strong> : Servicios Públicos</strong></label>
     </div>
-
+    <hr>
     <div class="titles-indicadores">
         <label for="">Indicadores de folios de hoy</label>
         <button class="button" href="#"><i class="bi bi-plus-circle"></i> Nuevo folio</button>
@@ -24,33 +37,93 @@
 
     <div class="indicadores">
         <div class="indicador one">
-            <i class="bi bi-archive-fill"></i>
-            <h1>5</h1>
+            <span class="indicador-header">
+                <i class="bi bi-archive-fill"></i>
+                <button>...</button>
+            </span>
+            <label class="num">5</label>
             <label for="">Folios <strong>nuevos</strong></label>
         </div>
         <div class="indicador two">
-            <i class="bi bi-calendar2-plus"></i>
-            <h1>5</h1>
+            <span class="indicador-header">
+                <i class="bi bi-calendar2-plus"></i>
+                <button>...</button>
+            </span>
+            <label class="num">5</label>
             <label for="">Folios <strong>por asignar</strong></label>
         </div>
         <div class="indicador trhee">
-            <i class="bi bi-radar"></i>
-            <h1>5</h1>
+            <span class="indicador-header">
+                <i class="bi bi-radar"></i>
+                <button>...</button>
+            </span>
+            <label class="num">5</label>
             <label for="">Folios <strong>en proceso</strong></label>
         </div>
         <div class="indicador four">
-            <i class="bi bi-card-checklist"></i>
-            <h1>5</h1>
+            <span class="indicador-header">
+                <i class="bi bi-card-checklist"></i>
+                <button>...</button>
+            </span>
+            <label class="num">5</label>
             <label for=""><strong>Folios concluidos</strong></label>
         </div>
         <div class="indicador five">
-            <i class="bi bi-exclamation-triangle-fill"></i>
-            <h1>5</h1>
+            <span class="indicador-header">
+                <i class="bi bi-exclamation-triangle-fill"></i>
+                <button>...</button>
+            </span>
+            <label class="num">5</label>
             <label for="">Folios <strong>con demoras</strong> <br> de atención</label>
         </div>
     </div>
 
+    <div class="reports-titles">
+        <span>Reporte Semanal</span>
+        <input type="date">
+        <span>Folios por tipo</span>
+        <span>Principales medios</span>
+    </div>
 
-    <script src="./date/date.js"></script>
+    <div class="reports">
+        <div class="chart-container">
+            <div class="stats">
+                <div>
+                    <h2>254</h2>
+                    <p>Total Atendidos</p>
+                </div>
+                <div>
+                    <h2>65</h2>
+                    <p>Inconclusos</p>
+                </div>
+            </div>
+            <canvas id="lineChart" width="580px" height="230px"></canvas>
+        </div>
+
+        <div class="chart-container donut">
+            <canvas id="doughnutChart" style="width: 150px; height: 150px;"></canvas>
+            <div class="legend">
+                <div class="legend-item"><span class="legend-color" style="background-color: #3b82f6;"></span>Luminarias - 35%</div>
+                <div class="legend-item"><span class="legend-color" style="background-color: #facc15;"></span>Basura - 20%</div>
+                <div class="legend-item"><span class="legend-color" style="background-color: #ef4444;"></span>Baches - 12%</div>
+                <div class="legend-item"><span class="legend-color" style="background-color: #8b5cf6;"></span>Jardines - 15%</div>
+                <div class="legend-item"><span class="legend-color" style="background-color: #22c55e;"></span>Contaminacion - 18%</div>
+            </div>
+            <a href="#">Ver completo</a>
+        </div>
+
+        <div class="chart-container donut">
+            <canvas id="doughnutChartTwo" style="width: 150pxpx; height: 150px;"></canvas>
+            <div class="legend">
+                <div class="legend-item"><span class="legend-color" style="background-color: #0A1F44;"></span>Web - 60%</div>
+                <div class="legend-item"><span class="legend-color" style="background-color: #3B82F6;"></span>Celular - 15%</div>
+                <div class="legend-item"><span class="legend-color" style="background-color: #FACC15;"></span>Whatsapp - 25%</div>
+                <div class="legend-item"><span class="legend-color" style="background-color: #60A5FA;"></span>Teléfono - 15%</div>
+                <div class="legend-item"><span class="legend-color" style="background-color: #FDE047;"></span>Otro - 25%</div>
+            </div>
+        </div>
+    </div>
+
 </body>
+
 </html>

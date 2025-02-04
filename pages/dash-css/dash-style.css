@@ -2,25 +2,28 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f5f5f5;
+    background-color: #C6C6C6;
 }
 
 .sup-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
-    background-color: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    background-color: #C6C6C6;
+    height: 15px;
+}
+
+.sup-header span {
+    font-size: 1.2rem;
 }
 
 label {
     font-size: 1.2em;
 
-
     a {
         text-decoration: none;
-        color: #007bff;
+        color: blue;
     }
 
     a:hover {
@@ -33,63 +36,201 @@ label {
     }
 }
 
-.titles-indicadores{
+/* Styles of the title and the button(new folio) */
+.titles-indicadores {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-    background-color: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    background-color: #C6C6C6;
+    height: 23px;
 }
 
-.titles-indicadores button{
+.titles-indicadores button {
     background-color: #007bff;
     color: #fff;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     padding: 10px;
     border-radius: 49px;
     border: none;
     width: 250px;
+    height: 45px;
     cursor: pointer;
 }
-.titles-indicadores button i {
-font-weight: 400;
 
+.titles-indicadores button i {
+    font-weight: 400;
+    margin-right: 30px;
 }
 
-.indicadores{
+/* Configuratioon of the styles of indicadors */
+.indicadores {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-    background-color: #fff;
 }
 
-.indicadores .indicador{
+.indicador {
+    background-color: #fff;
     border: 1px solid #7f8e9f7d;
     padding: 15px;
     text-align: center;
-    width: 15%;
+    width: 200px;
+    height: 100px;
+    border-radius: 20px;
+}
+
+.indicadores .indicador .num {
+    margin-top: -10%;
+    display: block;
+    font-size: 3rem;
+}
+
+.indicadores .indicador .indicador-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.indicadores .indicador .indicador-header button {
+    background-color: #ffffff00;
+    border: none;
+    font-size: 1.7rem;
+    margin-top: -20px;
+    cursor: pointer;
 }
 
 .indicadores .indicador.one i {
-color:rgb(217, 143, 143);
-font-size: 30px;
+    color: rgb(217, 143, 143);
+    font-size: 30px;
 }
 
 .indicadores .indicador.two i {
-color:rgb(226, 188, 18);
-font-size: 30px;
+    color: rgb(226, 188, 18);
+    font-size: 30px;
 }
+
 .indicadores .indicador.trhee i {
-color:rgb(30, 30, 160);
-font-size: 30px;
+    color: rgb(30, 30, 160);
+    font-size: 30px;
 }
+
 .indicadores .indicador.four i {
-color:green;
-font-size: 30px;
+    color: green;
+    font-size: 30px;
 }
+
+.indicadores .indicador.five {
+    background-color: rgba(255, 0, 0, 0.22);
+}
+
 .indicadores .indicador.five i {
-color:red;
-font-size: 30px;
+    color: red;
+    font-size: 30px;
+}
+
+/* Styles for the titles of the reports */
+.reports-titles {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 10px;
+}
+
+.reports-titles span {
+    color: #000;
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.reports-titles input {
+    background-color: #fff;
+    color: #000;
+    width: 250px;
+    height: 15px;
+    font-size: 1.2rem;
+    padding: 10px;
+    border-radius: 49px;
+}
+
+.reports {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 352px;
+    margin-top: 10px;
+}
+
+/* graphic concliudos/o colncluidos*/
+.chart-container {
+    width: 600px;
+    height: 290px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 9px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+}
+
+.stats {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+
+.stats h2 {
+    margin: 0;
+    color: #333;
+}
+
+.stats p {
+    margin: 0;
+    color: #777;
+    font-size: 0.9rem;
+}
+
+/* Donut graphic */
+.chart-container.donut {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 250px;
+    background-color: #fff;
+    padding: 15px;
+}
+
+.chart-container.donut canvas{
+    position: relative;
+    height: 200px;
+    width: 200px;
+}
+
+.legend {
+    margin-top: 10px;
+    width: 160px;
+}
+
+.legend-item {
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+    font-size: 0.9rem;
+}
+
+.legend-color {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.chart-container a {
+    color: blue;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    margin-top: 15px;
 }

@@ -167,22 +167,25 @@ aside .admin-section ul li {
 
 aside .menu ul li:hover,
 aside .admin-section ul li:hover {
-  background-color: #fff;
+  background-color: #C6C6C6;
 }
 
 aside .menu ul li:hover i,
 aside .admin-section ul li:hover i {
-  background-color: #fff;
+  background-color: #C6C6C6;
   color: #022868;
+  transition: 0.2s;
 }
 
 aside .menu ul li i:hover,
 aside .admin-section ul li i:hover {
   color: #022868;
+  transition: 0.2s;
 }
 aside .menu ul li:hover a,
 aside .admin-section ul li:hover a {
 color: #022868;
+transition: 0.2s;
 }
 
 
@@ -208,8 +211,7 @@ aside .admin-section ul li.active a {
 
 aside .menu ul li.active,
 aside .admin-section ul li.active {
-  background-color: #fff;
-  border-radius: 20px 20px 20px 20px;
+  background-color: #C6C6C6;
   color: #022868;
 }
 
@@ -225,13 +227,13 @@ aside .admin-section h2 {
 
 /* Main content */
 main {
-  background-color: #fff;
+  background-color: #C6C6C6;
   border-radius: 40px;
   width: 90%;
   margin-top: 2%;
   margin-left: auto;
   margin-right: 1%;
-  padding: 20px;
+  padding: 15px;
 }
 
 iframe {
