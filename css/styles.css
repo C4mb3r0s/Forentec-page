@@ -56,7 +56,7 @@ h1 {
   box-sizing: border-box;
 }
 
-.bi {
+.bi.bi-search {
   position: absolute;
   right: 15px;
   color: #fff;
@@ -65,9 +65,6 @@ h1 {
 }
 
 .notifications {
-  width: auto;
-  height: auto;
-  color: black;
   display: flex;
   position: relative;
   align-items: center;
@@ -83,12 +80,90 @@ h1 {
   justify-content: center;
   align-items: center;
   cursor: pointer;
+  position: relative;
+  font-size: 2rem;
 }
 
-.notifications button i {
+.bi-bell{
   color: #fff;
-  font-size: 24px;
-  padding: 0;
+font-size: 45px;
+}
+
+.badge {
+  background-color: #ffcc00;
+  color: black;
+  padding: 2px 6px;
+  border-radius: 50%;
+  font-size: 12px;
+  position: absolute;
+  margin-top: -30px;
+  margin-left: 20px;
+  width: 20px;
+  height: 20px;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.dropdown {
+  display: none;
+  position: absolute;
+  right: 10px;
+  top: 40px;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 290px;
+  z-index: 1000;
+}
+
+.dropdown::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  right: 20px;
+  border-width: 10px;
+  border-style: solid;
+  border-color: transparent transparent white transparent;
+}
+
+.dropdown .icon-drop {
+  background-color: #e57373;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.dropdown .icon-drop .bi.bi-pencil-square {
+  position: relative;
+  color: #fff;
+  font-size: 30px;
+  margin-left: 20px;
+  margin-top: 5px;
+}
+
+.notification-item {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+.notification-item:last-child {
+  border-bottom: none;
+}
+
+.name {
+  flex: 1;
+  font-weight: bold;
+  color: #555;
+}
+
+.time {
+  font-size: 12px;
+  color: gray;
 }
 
 .info {
@@ -115,12 +190,13 @@ h1 {
 }
 
 .info .details .name {
+  color: #fff;
   font-size: 1.2rem;
   font-weight: 600;
 }
 
 .info .details .position {
-  color: rgba(rgba(187, 171, 171, 0.41));
+  color: rgba(184, 178, 178, 0.682);
 }
 
 .info a {
@@ -182,10 +258,11 @@ aside .admin-section ul li i:hover {
   color: #022868;
   transition: 0.2s;
 }
+
 aside .menu ul li:hover a,
 aside .admin-section ul li:hover a {
-color: #022868;
-transition: 0.2s;
+  color: #022868;
+  transition: 0.2s;
 }
 
 
