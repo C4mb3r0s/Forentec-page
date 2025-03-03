@@ -84,9 +84,9 @@ h1 {
   font-size: 2rem;
 }
 
-.bi-bell{
+.bi-bell {
   color: #fff;
-font-size: 45px;
+  font-size: 45px;
 }
 
 .badge {
@@ -318,6 +318,5 @@ iframe {
   width: 100%;
   height: 100%;
   border: none;
-
   pointer-events: auto;
 }
